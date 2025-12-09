@@ -1,0 +1,15 @@
+Company type: “BrightHealth TeleCare” (small telehealth SaaS) or “NimbusPay” (fintech SaaS).
+
+Business context: Provide healthcare video consult platform; stores limited PHI; multi-tenant SaaS.
+
+Scope boundary:
+
+Assets: Cloud workloads (AWS: EC2, RDS), endpoints (staff laptops), IAM (Entra ID), ticketing (Jira), code repo (GitHub).
+
+Systems: Production VPC, staging, CI/CD, endpoint protection, SIEM.
+
+Users: Engineers, clinicians, support staff, admins; third-party vendors (billing).
+
+Data types: PHI, PII, audit logs, source code, secrets.
+
+Assumptions: Single cloud provider; remote-first staff; baseline security tools (EDR, SSO, MFA).
